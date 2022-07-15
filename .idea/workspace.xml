@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99385884-8e4c-4a44-84c5-1ead9193ccec" name="Changes" comment="files" />
+    <list default="true" id="99385884-8e4c-4a44-84c5-1ead9193ccec" name="Changes" comment="files">
+      <change afterPath="$PROJECT_DIR$/state-2/outputs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state-2/transit_gateway.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state-2/vpc.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state-2/vpc2.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/terrafrom-shared-state.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/terrafrom-shared-state.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/backend/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state-1/_variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/state-1/_variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state-1/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/state-1/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state-1/outputs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/state-1/outputs.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state-2/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/state-2/main.tf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,10 +43,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/state-2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ibaker1\Documents\git\terrafrom-shared-state\state-2" />
       <recent name="C:\Users\ibaker1\Documents\git\terrafrom test\backend" />
       <recent name="C:\Users\ibaker1\Documents\git\terrafrom test\Backend" />
       <recent name="C:\Users\ibaker1\Documents\git\terrafrom test\state-2" />

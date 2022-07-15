@@ -7,12 +7,20 @@ terraform {
   }
 }
 
+
 provider "aws" {
   region = "eu-west-1"
 }
 
+variable "create_iam_user" {
+  #  true of false
+  default = "true"
+}
+
+
 resource "aws_iam_user" "test" {
-  name = data.terraform_remote_state.state-1.outputs.local
+  count = var.create_iam_user ? 1 : 0
+  name  = data.terraform_remote_state.state-1.outputs.local
 
   tags = {
     tag-key = "tag-value"
@@ -34,5 +42,23 @@ data "terraform_remote_state" "state-1" {
 #
 #  config = {
 #    path = "${path.module}/../state-1/terraform.tfstate"
+#  }
+#}
+#
+#variable "oidc_federated_account" {
+#  type = map(map)
+#  default = {
+#    dev = {
+#      account_number = "789457496470"
+#      create_oidc     = true
+#    }
+#    stage = {
+#      account_number = ""
+#      create_oidc     = true
+#    }
+#    prod = {
+#      account_number = "134689845371"
+#      create_oidc     = true
+#    }
 #  }
 #}
