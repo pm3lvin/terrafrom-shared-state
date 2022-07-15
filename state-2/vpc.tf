@@ -1,17 +1,31 @@
-variable "vpc-name" {
-  default = ["transit-gateway-test", "transit-gateway-test2"]
+variable "vpc_name" {
+    default = ["TGW-1", "TGW-2"]
 }
 
-variable "cidr_list" {
-  type = list
-  default = ["10.0.0.0/17", "10.0.128.0/17"]
+variable "vpc_cidr_list" {
+    type = list
+    default = ["10.0.0.0/17", "10.0.128.0/17"]
 }
 
-resource "aws_vpc" "test" {
-    for_each = zipmap(var.vpc-name, var.cidr_list)
-    cidr_block = each.value
+variable "subnet_cidr_list" {
+    type = list
+    default = ["10.0.1.0/24", "10.0.129.0/24"]
+}
+
+resource "aws_vpc" "vpc_test" {
+    count = 2
+    cidr_block = var.vpc_cidr_list[count.index]
     tags = {
-        Name = each.key
+        Name = var.vpc_name[count.index]
+    }
+}
+
+resource "aws_subnet" "subnet_test" {
+    count = 2
+    vpc_id = aws_vpc.vpc_test[count.index].id
+    cidr_block = var.subnet_cidr_list[count.index]
+    tags = {
+        Name = var.vpc_name[count.index]
     }
 }
 
